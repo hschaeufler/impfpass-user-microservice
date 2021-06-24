@@ -43,7 +43,6 @@ const JWT_OPTIONS = {
 }
 
 const JWTStrategy = new JwtStrategy(JWT_OPTIONS, async function(jwt_payload, done) {
-    console.log(jwt_payload);
 
     const user = jwt_payload;
 
